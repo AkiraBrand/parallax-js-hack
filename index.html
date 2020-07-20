@@ -1,19 +1,37 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
 
-  <title>Akira's Parallax</title>
-  <meta name="description" content="Akira's Parallax">
-  <meta name="author" content="Parallax Hack">
+	<meta charset="utf-8">
 
-  <link rel="stylesheet" href="/styles.css?v=1.0">
-  <link rel="script" href="/index.js">
+	<title>Metatron Parallax| Akira Brand</title>
 
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css"/>
+
+  <!-- Parallax library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+
+  <div id="container" class="container">
+    <div id="scene">
+      <div data-depth="1.00"><img src="/assets/images/layer1.png"></div>
+      <div data-depth="0.6">My second Layer!</div>
+    </div>
+  </div>
+
+  <script src="../parallax.js"></script>
+
+  <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+  </script>
+
 </body>
 </html>
