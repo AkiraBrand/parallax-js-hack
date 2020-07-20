@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 	<meta charset="utf-8">
@@ -11,61 +12,62 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="./assets/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css" />
 
-  <!-- Parallax library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<!-- Parallax library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
 
 <body>
 
 
-<div class="parallax-elements">
-  <div id="container-1" class="container-1">
-    <div id="scene">
-      <div data-depth-x="-1.90"><img src="assets/images/layer1.png"></div>
-      <div data-depth="0.6"><img src="assets/images/layer2.png"></div>
-      <div data-depth-y="3.00"><img src="assets/images/layer3.png"?</div>
-    </div>
-  </div>
+	<div class="parallax-elements">
+		<div id="container-1" class="container-1">
+			<div id="scene">
+				<div data-depth-x="-1.90"><img src="assets/images/layer1.png"></div>
+				<div data-depth="0.6"><img src="assets/images/layer2.png"></div>
+				<div data-depth-y="3.00"><img src="assets/images/layer3.png" ?</div>
+				</div>
+			</div>
 
-	<div id="container-2" class="container-2">
-		<div id="scene-2">
-			<div data-depth-x="-1.00"><img src="assets/images/layer4.png"></div>
-			<div data-depth-y="-3.00"><img src="assets/images/layer5.png"></div>
-			<div data-depth-x="2.00"><img src="assets/images/layer4.png"></div>
+			<div id="container-2" class="container-2">
+				<div id="scene-2">
+					<div data-depth-x="-1.00"><img src="assets/images/layer4.png"></div>
+					<div data-depth-y="-3.00"><img src="assets/images/layer5.png"></div>
+					<div data-depth-x="2.00"><img src="assets/images/layer4.png"></div>
+				</div>
+			</div>
+
+			<div id="container-3" class="container-3">
+				<div id="scene-3">
+					<div data-depth="0.30"><img src="assets/images/layer7.png"></div>
+					<div data-depth-x="-1.50"><img src="assets/images/layer6.png"></div>
+					<div data-depth-y="2.50"><img src="assets/images/layer7.png"></div>
+				</div>
+			</div>
 		</div>
-	</div>
-
-	<div id="container-3" class="container-3">
-		<div id="scene-3">
-			<div data-depth="0.30"><img src="assets/images/layer7.png"></div>
-			<div data-depth-x="-1.50"><img src="assets/images/layer6.png"></div>
-			<div data-depth-y="2.50"><img src="assets/images/layer7.png"></div>
-		</div>
-	</div>
-</div>
 
 
-  <script>
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
+		<script>
+			var scene = document.getElementById('scene');
+			var parallax = new Parallax(scene);
 
-		var sceneTwo = document.getElementById('scene-2');
-		var parallaxTwo = new Parallax(sceneTwo);
+			var sceneTwo = document.getElementById('scene-2');
+			var parallaxTwo = new Parallax(sceneTwo);
 
-		var sceneThree = document.getElementById('scene-3');
-		var parallaxThree = new Parallax(sceneThree);
+			var sceneThree = document.getElementById('scene-3');
+			var parallaxThree = new Parallax(sceneThree);
 
-		parallax.friction(0.01, 0.01);
+			parallax.friction(0.01, 0.01);
 
-		parallaxTwo.invert(false, true);
-		parallaxTwo.friction(0.01, 0.01);
+			parallaxTwo.invert(false, true);
+			parallaxTwo.friction(0.01, 0.01);
 
-		parallaxThree.friction(0.01, 0.01);
+			parallaxThree.friction(0.01, 0.01);
 
 
-  </script>
+		</script>
 
 </body>
+
 </html>
