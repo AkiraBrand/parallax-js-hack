@@ -29,15 +29,17 @@
 
 	<div id="container-2" class="container-2">
 		<div id="scene-2">
-			<div data-depth-x="1.00"><img src="assets/images/layer4.png"></div>
-			<div data-depth-y="-0.80"><img src="assets/images/layer5.png"></div>
+			<div data-depth-x="-1.00"><img src="assets/images/layer4.png"></div>
+			<div data-depth-y="1.00"><img src="assets/images/layer5.png"></div>
+			<div data-depth-x="0.90"><img src="assets/images/layer4.png"></div>
 		</div>
 	</div>
 
 	<div id="container-3" class="container-3">
 		<div id="scene-3">
-			<div data-depth-x="0.50"><img src="assets/images/layer6.png"></div>
-			<div data-depth-y="0.50"><img src="assets/images/layer7.png"></div>
+			<div data-depth="0.30"><img src="assets/images/layer7.png"></div>
+			<div data-depth-x="-1.50"><img src="assets/images/layer6.png"></div>
+			<div data-depth-y="2.50"><img src="assets/images/layer7.png"></div>
 		</div>
 	</div>
 
@@ -53,7 +55,12 @@
 		var sceneThree = document.getElementById('scene-3');
 		var parallaxThree = new Parallax(sceneThree);
 
-		parallaxTwo.invert(false, false);
+		parallax.friction(0.01, 0.01);
+
+		parallaxTwo.invert(false, true);
+		parallaxTwo.friction(0.01, 0.01);
+
+		parallaxThree.friction(0.01, 0.01);
 
 
   </script>
