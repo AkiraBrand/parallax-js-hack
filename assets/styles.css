@@ -16,7 +16,7 @@ img {
   padding: 30px;
 }
 
-.container {
+.container-1 {
   margin: 0 auto;
   margin-left: 150px;
   margin-top: 100px;
@@ -26,3 +26,9 @@ img {
 }
   .container--offset {
   margin-left: 0; }
+
+.container-2 {
+  margin: 50px;
+  padding: 5px;
+  position: relative;
+}

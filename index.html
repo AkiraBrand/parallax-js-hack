@@ -19,7 +19,7 @@
 
 <body>
 
-  <div id="container" class="container">
+  <div id="container-1" class="container-1">
     <div id="scene">
       <div data-depth-x="-1.90"><img src="assets/images/layer1.png"></div>
       <div data-depth="0.6"><img src="assets/images/layer2.png"></div>
@@ -27,11 +27,21 @@
     </div>
   </div>
 
+	<div id="container-2" class="container-2">
+		<div id="scene-2">
+			<div data-depth-x="1.00"><img src="assets/images/layer4.png"></div>
+			<div data-depth-y="0.80"><img src="assets/images/layer5.png"></div>
+		</div>
+	</div>
+
   <!-- <script src="../parallax.js"></script> -->
 
   <script>
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
+
+		var sceneTwo = document.getElementById('scene-2');
+		var parallaxTwo = new Parallax(sceneTwo);
   </script>
 
 </body>
