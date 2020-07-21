@@ -16,7 +16,7 @@ img {
 .parallax-elements {
   display: flex;
   flex-direction: column-reverse;
-  border: 5px solid black;
+  /* border: 5px solid black; */
   align-items: center;
   justify-content: center;
 }
@@ -24,7 +24,7 @@ img {
 .container-1 {
   margin-left: 20%;
   max-width: 600px;
-  border: 5px solid green;
+  /* border: 5px solid green; */
 }
 /* .container--offset {
   margin: 50px; } */
@@ -32,11 +32,11 @@ img {
 .container-2 {
   margin-left: 20%;
   max-width: 600px;
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
 }
 
 .container-3 {
   margin-left: 20%;
   max-width: 600px;
-  border: 5px solid orange;
+  /* border: 5px solid orange; */
 }
