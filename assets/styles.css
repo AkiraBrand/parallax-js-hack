@@ -18,7 +18,7 @@ img {
   flex-direction: column-reverse;
   border: 5px solid black;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .container-1 {
@@ -36,7 +36,6 @@ img {
 }
 
 .container-3 {
-  margin-top: 30px;
   margin-left: 20%;
   max-width: 600px;
   border: 5px solid orange;
