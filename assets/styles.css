@@ -9,35 +9,35 @@ body{
 }
 
 img {
-  width: 50%;
-  height: 50%;
+  width: 35%;
+  height: 35%;
 }
 
-.scene .scene-2 .scene-3 {
-  margin: 30px;
-  padding: 30px;
+.parallax-elements {
+  display: flex;
+  flex-direction: column-reverse;
+  border: 5px solid black;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 50px;
-  margin-left: 150px;
+  margin-left: 20%;
   max-width: 600px;
+  border: 5px solid green;
 }
-.container--offset {
-  margin-left: 50px; }
+/* .container--offset {
+  margin: 50px; } */
 
 .container-2 {
-  margin: 50px;
-  padding: 5px;
+  margin-left: 20%;
   max-width: 600px;
-  position: relative;
+  border: 5px solid blue;
 }
 
 .container-3 {
-  margin: 0px;
-  padding: 0px;
-  top: 30px;
+  margin-top: 30px;
+  margin-left: 20%;
+  max-width: 600px;
+  border: 5px solid orange;
 }
